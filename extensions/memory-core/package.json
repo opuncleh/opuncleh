@@ -1,0 +1,20 @@
+{
+  "name": "@opuncleh/memory-core",
+  "version": "2026.3.11",
+  "private": true,
+  "description": "Opuncleh core memory search plugin",
+  "type": "module",
+  "peerDependencies": {
+    "opuncleh": ">=2026.3.11"
+  },
+  "peerDependenciesMeta": {
+    "opuncleh": {
+      "optional": true
+    }
+  },
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

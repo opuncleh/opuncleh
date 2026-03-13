@@ -1,0 +1,17 @@
+{
+  "name": "@opuncleh/memory-lancedb",
+  "version": "2026.3.11",
+  "private": true,
+  "description": "Opuncleh LanceDB-backed long-term memory plugin with auto-recall/capture",
+  "type": "module",
+  "dependencies": {
+    "@lancedb/lancedb": "^0.26.2",
+    "@sinclair/typebox": "0.34.48",
+    "openai": "^6.27.0"
+  },
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

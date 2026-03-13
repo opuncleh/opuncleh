@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: opuncleh-config
+  labels:
+    app: opuncleh
+data:
+  opuncleh.json: |
+    {
+      "gateway": {
+        "mode": "local",
+        "bind": "loopback",
+        "port": 18789,
+        "auth": {
+          "mode": "token"
+        },
+        "controlUi": {
+          "enabled": true
+        }
+      },
+      "agents": {
+        "defaults": {
+          "workspace": "~/.opuncleh/workspace"
+        },
+        "list": [
+          {
+            "id": "default",
+            "name": "Opuncleh Assistant",
+            "workspace": "~/.opuncleh/workspace"
+          }
+        ]
+      },
+      "cron": { "enabled": false }
+    }
+  AGENTS.md: |
+    # Opuncleh Assistant
+
+    You are a helpful AI assistant running in Kubernetes.

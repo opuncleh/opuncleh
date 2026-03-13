@@ -1,0 +1,12 @@
+{
+  "name": "@opuncleh/signal",
+  "version": "2026.3.11",
+  "private": true,
+  "description": "Opuncleh Signal channel plugin",
+  "type": "module",
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

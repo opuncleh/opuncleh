@@ -1,0 +1,12 @@
+{
+  "name": "@opuncleh/vllm-provider",
+  "version": "2026.3.12",
+  "private": true,
+  "description": "Opuncleh vLLM provider plugin",
+  "type": "module",
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

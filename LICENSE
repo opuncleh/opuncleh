@@ -1,0 +1,69 @@
+OPUNCLEH LICENSE
+
+================================================================================
+PARODY DECLARATION
+================================================================================
+
+Opuncleh is a parody AI agent forked from OpenClaw (https://github.com/openclaw/openclaw).
+
+This project exists for humor, educational purposes, and to demonstrate the art
+of intentionally misspelled phonetic English in AI systems. It is not affiliated
+with, endorsed by, or connected to the OpenClaw project or its maintainers.
+
+All modifications transform the original work into a comedic derivative that
+speaks in "derpy" vocabulary - intentionally misspelled words that phonetically
+approximate their correct counterparts.
+
+MODIFICATIONS MADE:
+- Global rename: OpenClaw → Opuncleh, Clawd → Lobstr, Molty → Derpy
+- Added src/derpy/ module with 966+ word substitutions
+- Integrated derpy transform into reply pipeline
+- All output text now goes through derpy vocabulary transformation
+
+EXAMPLE TRANSFORMATIONS:
+- "The function works correctly" → "Teh funktion werks correktly"
+- "Hello friend, how are you?" → "Henlo fren, hao r u?"
+- "This is a deep learning model" → "Dis iz a derp lurning modul"
+
+================================================================================
+MIT LICENSE
+================================================================================
+
+MIT License
+
+Copyright (c) 2024-2026 Opuncleh Contributors
+Original OpenClaw Copyright (c) 2024-2026 Peter Steinberger and contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+ATTRIBUTION
+================================================================================
+
+This project is a derivative work based on OpenClaw:
+- Original Repository: https://github.com/openclaw/openclaw
+- Original License: MIT
+- Original Author: Peter Steinberger and contributors
+
+We thank the OpenClaw team for creating an excellent foundation that made
+this parody possible.
+
+================================================================================
+
+Dey r nawt bugz, dey r featurs. 🦞

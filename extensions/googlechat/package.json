@@ -1,0 +1,47 @@
+{
+  "name": "@opuncleh/googlechat",
+  "version": "2026.3.11",
+  "private": true,
+  "description": "Opuncleh Google Chat channel plugin",
+  "type": "module",
+  "dependencies": {
+    "google-auth-library": "^10.6.1"
+  },
+  "peerDependencies": {
+    "opuncleh": ">=2026.3.11"
+  },
+  "peerDependenciesMeta": {
+    "opuncleh": {
+      "optional": true
+    }
+  },
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "channel": {
+      "id": "googlechat",
+      "label": "Google Chat",
+      "selectionLabel": "Google Chat (Chat API)",
+      "detailLabel": "Google Chat",
+      "docsPath": "/channels/googlechat",
+      "docsLabel": "googlechat",
+      "blurb": "Google Workspace Chat app via HTTP webhooks.",
+      "aliases": [
+        "gchat",
+        "google-chat"
+      ],
+      "order": 55
+    },
+    "install": {
+      "npmSpec": "@opuncleh/googlechat",
+      "localPath": "extensions/googlechat",
+      "defaultChoice": "npm"
+    },
+    "releaseChecks": {
+      "rootDependencyMirrorAllowlist": [
+        "google-auth-library"
+      ]
+    }
+  }
+}

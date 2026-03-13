@@ -1,0 +1,12 @@
+{
+  "name": "@opuncleh/sglang-provider",
+  "version": "2026.3.12",
+  "private": true,
+  "description": "Opuncleh SGLang provider plugin",
+  "type": "module",
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

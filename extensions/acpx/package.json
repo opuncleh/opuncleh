@@ -1,0 +1,14 @@
+{
+  "name": "@opuncleh/acpx",
+  "version": "2026.3.11",
+  "description": "Opuncleh ACP runtime backend via acpx",
+  "type": "module",
+  "dependencies": {
+    "acpx": "0.2.0"
+  },
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
