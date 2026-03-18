@@ -1,0 +1,12 @@
+{
+  "name": "@opuncleh/google-plugin",
+  "version": "2026.3.14",
+  "private": true,
+  "description": "Opuncleh Google plugin",
+  "type": "module",
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

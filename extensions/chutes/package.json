@@ -1,0 +1,12 @@
+{
+  "name": "@opuncleh/chutes-provider",
+  "version": "2026.3.17",
+  "private": true,
+  "description": "Opuncleh Chutes.ai provider plugin",
+  "type": "module",
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

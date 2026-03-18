@@ -1,0 +1,12 @@
+{
+  "name": "@opuncleh/vercel-ai-gateway-provider",
+  "version": "2026.3.14",
+  "private": true,
+  "description": "Opuncleh Vercel AI Gateway provider plugin",
+  "type": "module",
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

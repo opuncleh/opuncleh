@@ -1,0 +1,12 @@
+{
+  "name": "@opuncleh/xiaomi-provider",
+  "version": "2026.3.14",
+  "private": true,
+  "description": "Opuncleh Xiaomi provider plugin",
+  "type": "module",
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

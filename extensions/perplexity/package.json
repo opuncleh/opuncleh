@@ -1,0 +1,12 @@
+{
+  "name": "@opuncleh/perplexity-plugin",
+  "version": "2026.3.14",
+  "private": true,
+  "description": "Opuncleh Perplexity plugin",
+  "type": "module",
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@opuncleh/huggingface-provider",
+  "version": "2026.3.14",
+  "private": true,
+  "description": "Opuncleh Hugging Face provider plugin",
+  "type": "module",
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

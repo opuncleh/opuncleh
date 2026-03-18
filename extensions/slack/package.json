@@ -1,0 +1,13 @@
+{
+  "name": "@opuncleh/slack",
+  "version": "2026.3.14",
+  "private": true,
+  "description": "Opuncleh Slack channel plugin",
+  "type": "module",
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "setupEntry": "./setup-entry.ts"
+  }
+}

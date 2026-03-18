@@ -1,0 +1,12 @@
+{
+  "name": "@opuncleh/openai-provider",
+  "version": "2026.3.14",
+  "private": true,
+  "description": "Opuncleh OpenAI provider plugins",
+  "type": "module",
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

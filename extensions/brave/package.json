@@ -1,0 +1,12 @@
+{
+  "name": "@opuncleh/brave-plugin",
+  "version": "2026.3.14",
+  "private": true,
+  "description": "Opuncleh Brave plugin",
+  "type": "module",
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

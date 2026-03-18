@@ -1,0 +1,12 @@
+{
+  "name": "@opuncleh/synthetic-provider",
+  "version": "2026.3.14",
+  "private": true,
+  "description": "Opuncleh Synthetic provider plugin",
+  "type": "module",
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

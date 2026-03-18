@@ -1,0 +1,112 @@
+export const wordSubstitutions: Record<string, string> = {
+  "the": "teh",
+  "you": "u",
+  "your": "ur",
+  "are": "r",
+  "why": "y",
+  "see": "c",
+  "be": "b",
+  "and": "annd",
+  "for": "4",
+  "to": "2",
+  "one": "1",
+  "with": "wif",
+  "that": "dat",
+  "this": "dis",
+  "have": "hav",
+  "from": "frum",
+  "they": "dey",
+  "what": "wat",
+  "there": "ther",
+  "their": "thier",
+  "would": "wud",
+  "could": "cud",
+  "should": "shud",
+  "because": "bcuz",
+  "please": "plz",
+  "thanks": "thx",
+  "thank": "thx",
+  "hello": "henlo",
+  "friend": "fren",
+  "something": "somthin",
+  "anything": "anythin",
+  "everything": "evrythin",
+  "nothing": "nothin",
+  "function": "funktion",
+  "action": "akshun",
+  "question": "kwestion",
+  "information": "informashun",
+  "application": "aplikashun",
+  "awesome": "ossum",
+  "amazing": "amayzing",
+  "wonderful": "wunderful",
+  "beautiful": "bootiful",
+  "pretty": "pritty",
+  "hungry": "hungree",
+  "tired": "tyred",
+  "happy": "happeh",
+  "error": "eror",
+  "system": "sistum",
+  "process": "proces",
+  "working": "werking",
+  "running": "runnin",
+  "loading": "loadin",
+  "starting": "startin",
+  "lobster": "lobstur",
+  "claw": "claw",
+  "shell": "shel",
+  "click": "clik",
+  "main": "mayn",
+  "code": "coed",
+  "data": "dayta",
+  "file": "fiel",
+  "help": "halp",
+  "good": "gud",
+  "great": "grate",
+  "nice": "niec",
+  "cool": "kewl",
+  "love": "luv",
+  "like": "liek",
+  "just": "jus",
+  "know": "kno",
+  "think": "tink",
+  "want": "wunt",
+  "need": "nead",
+  "make": "maek",
+  "work": "werk",
+  "look": "lok",
+  "very": "vry",
+  "much": "mutch",
+  "some": "sum",
+  "these": "thees",
+  "those": "thoze",
+  "here": "heer",
+  "where": "wher",
+  "when": "wen",
+  "which": "wich",
+  "about": "abowt",
+  "more": "moar",
+  "other": "othr",
+  "people": "peeple",
+  "my": "mah",
+  "me": "meh",
+  "i": "i"
+};
+
+export function getDerpyWord(word: string): string {
+  const lower = word.toLowerCase();
+  const sub = wordSubstitutions[lower];
+  if (!sub) return word;
+  if (word[0] === word[0].toUpperCase()) {
+    return sub.charAt(0).toUpperCase() + sub.slice(1);
+  }
+  return sub;
+}
+
+export function derpify(text: string): string {
+  return text.replace(/\b\w+\b/g, (word) => getDerpyWord(word));
+}
+
+export function getSubstitutionCount(): number {
+  return Object.keys(wordSubstitutions).length;
+}

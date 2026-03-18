@@ -1,0 +1,179 @@
+import { describe, expect, it, test } from "vitest";
+import {
+  applyOpunclehManifestInstallCommonFields,
+  getFrontmatterString,
+  normalizeStringList,
+  parseFrontmatterBool,
+  parseOpunclehManifestInstallBase,
+  resolveOpunclehManifestBlock,
+  resolveOpunclehManifestInstall,
+  resolveOpunclehManifestOs,
+  resolveOpunclehManifestRequires,
+} from "./frontmatter.js";
+
+describe("shared/frontmatter", () => {
+  test("normalizeStringList handles strings, arrays, and non-list values", () => {
+    expect(normalizeStringList("a, b,,c")).toEqual(["a", "b", "c"]);
+    expect(normalizeStringList([" a ", "", "b", 42])).toEqual(["a", "b", "42"]);
+    expect(normalizeStringList(null)).toEqual([]);
+  });
+
+  test("getFrontmatterString extracts strings only", () => {
+    expect(getFrontmatterString({ a: "b" }, "a")).toBe("b");
+    expect(getFrontmatterString({ a: 1 }, "a")).toBeUndefined();
+  });
+
+  test("parseFrontmatterBool respects explicit values and fallback", () => {
+    expect(parseFrontmatterBool("true", false)).toBe(true);
+    expect(parseFrontmatterBool("false", true)).toBe(false);
+    expect(parseFrontmatterBool(undefined, true)).toBe(true);
+    expect(parseFrontmatterBool("maybe", false)).toBe(false);
+  });
+
+  test("resolveOpunclehManifestBlock reads current manifest keys and custom metadata fields", () => {
+    expect(
+      resolveOpunclehManifestBlock({
+        frontmatter: {
+          metadata: "{ opuncleh: { foo: 1, bar: 'baz' } }",
+        },
+      }),
+    ).toEqual({ foo: 1, bar: "baz" });
+
+    expect(
+      resolveOpunclehManifestBlock({
+        frontmatter: {
+          pluginMeta: "{ opuncleh: { foo: 2 } }",
+        },
+        key: "pluginMeta",
+      }),
+    ).toEqual({ foo: 2 });
+  });
+
+  test("resolveOpunclehManifestBlock returns undefined for invalid input", () => {
+    expect(resolveOpunclehManifestBlock({ frontmatter: {} })).toBeUndefined();
+    expect(
+      resolveOpunclehManifestBlock({ frontmatter: { metadata: "not-json5" } }),
+    ).toBeUndefined();
+    expect(resolveOpunclehManifestBlock({ frontmatter: { metadata: "123" } })).toBeUndefined();
+    expect(resolveOpunclehManifestBlock({ frontmatter: { metadata: "[]" } })).toBeUndefined();
+    expect(
+      resolveOpunclehManifestBlock({ frontmatter: { metadata: "{ nope: { a: 1 } }" } }),
+    ).toBeUndefined();
+  });
+
+  it("normalizes manifest requirement and os lists", () => {
+    expect(
+      resolveOpunclehManifestRequires({
+        requires: {
+          bins: "bun, node",
+          anyBins: [" ffmpeg ", ""],
+          env: ["OPUNCLEH_TOKEN", " OPUNCLEH_URL "],
+          config: null,
+        },
+      }),
+    ).toEqual({
+      bins: ["bun", "node"],
+      anyBins: ["ffmpeg"],
+      env: ["OPUNCLEH_TOKEN", "OPUNCLEH_URL"],
+      config: [],
+    });
+    expect(resolveOpunclehManifestRequires({})).toBeUndefined();
+    expect(resolveOpunclehManifestOs({ os: [" darwin ", "linux", ""] })).toEqual([
+      "darwin",
+      "linux",
+    ]);
+  });
+
+  it("parses and applies install common fields", () => {
+    const parsed = parseOpunclehManifestInstallBase(
+      {
+        type: " Brew ",
+        id: "brew.git",
+        label: "Git",
+        bins: [" git ", "git"],
+      },
+      ["brew", "npm"],
+    );
+
+    expect(parsed).toEqual({
+      raw: {
+        type: " Brew ",
+        id: "brew.git",
+        label: "Git",
+        bins: [" git ", "git"],
+      },
+      kind: "brew",
+      id: "brew.git",
+      label: "Git",
+      bins: ["git", "git"],
+    });
+    expect(parseOpunclehManifestInstallBase({ kind: "bad" }, ["brew"])).toBeUndefined();
+    expect(
+      applyOpunclehManifestInstallCommonFields<{
+        extra: boolean;
+        id?: string;
+        label?: string;
+        bins?: string[];
+      }>({ extra: true }, parsed!),
+    ).toEqual({
+      extra: true,
+      id: "brew.git",
+      label: "Git",
+      bins: ["git", "git"],
+    });
+  });
+
+  it("prefers explicit kind, ignores invalid common fields, and leaves missing ones untouched", () => {
+    const parsed = parseOpunclehManifestInstallBase(
+      {
+        kind: " npm ",
+        type: "brew",
+        id: 42,
+        label: null,
+        bins: [" ", ""],
+      },
+      ["brew", "npm"],
+    );
+
+    expect(parsed).toEqual({
+      raw: {
+        kind: " npm ",
+        type: "brew",
+        id: 42,
+        label: null,
+        bins: [" ", ""],
+      },
+      kind: "npm",
+    });
+    expect(
+      applyOpunclehManifestInstallCommonFields(
+        { id: "keep", label: "Keep", bins: ["bun"] },
+        parsed!,
+      ),
+    ).toEqual({
+      id: "keep",
+      label: "Keep",
+      bins: ["bun"],
+    });
+  });
+
+  it("maps install entries through the parser and filters rejected specs", () => {
+    expect(
+      resolveOpunclehManifestInstall(
+        {
+          install: [{ id: "keep" }, { id: "drop" }, "bad"],
+        },
+        (entry) => {
+          if (
+            typeof entry === "object" &&
+            entry !== null &&
+            (entry as { id?: string }).id === "keep"
+          ) {
+            return { id: "keep" };
+          }
+          return undefined;
+        },
+      ),
+    ).toEqual([{ id: "keep" }]);
+  });
+});

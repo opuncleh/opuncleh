@@ -1,0 +1,12 @@
+{
+  "name": "@opuncleh/elevenlabs-speech",
+  "version": "2026.3.14",
+  "private": true,
+  "description": "Opuncleh ElevenLabs speech plugin",
+  "type": "module",
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@opuncleh/microsoft-speech",
+  "version": "2026.3.14",
+  "private": true,
+  "description": "Opuncleh Microsoft speech plugin",
+  "type": "module",
+  "opuncleh": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
