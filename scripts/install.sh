@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # Opuncleh Installer for macOS and Linux
-# Usage: curl -fsSL --proto '=https' --tlsv1.2 https://opuncleh.ai/install.sh | bash
+# Usage: curl -fsSL --proto '=https' --tlsv1.2 https://opuncleh.com/install.sh | bash
 
 BOLD='\033[1m'
 ACCENT='\033[38;2;255;77;77m'       # coral-bright  #ff4d4d
@@ -1974,7 +1974,7 @@ can_resolve_registry_package_version() {
     if [[ -z "$value" ]]; then
         return 0
     fi
-    if [[ "${value,,}" == "main" ]]; then
+    if [[ "$(echo "$value" | tr '[:upper:]' '[:lower:]')" == "main" ]]; then
         return 1
     fi
     if is_explicit_package_install_spec "$value"; then
