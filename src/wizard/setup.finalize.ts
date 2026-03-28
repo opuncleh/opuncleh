@@ -443,11 +443,7 @@ export async function finalizeSetupWizard(
 
   await setupWizardShellCompletion({ flow, prompter });
 
-  const shouldOpenControlUi =
-    !opts.skipUi &&
-    settings.authMode === "token" &&
-    Boolean(settings.gatewayToken) &&
-    hatchChoice === null;
+  const shouldOpenControlUi = false;
   if (shouldOpenControlUi) {
     const browserSupport = await detectBrowserOpenSupport();
     if (browserSupport.ok) {
