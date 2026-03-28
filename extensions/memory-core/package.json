@@ -5,7 +5,7 @@
   "description": "Opuncleh core memory search plugin",
   "type": "module",
   "peerDependencies": {
-    "@opuncleh/opuncleh": ">=2026.3.12"
+    "@opuncleh/opuncleh": "workspace:*"
   },
   "peerDependenciesMeta": {
     "opuncleh": {
