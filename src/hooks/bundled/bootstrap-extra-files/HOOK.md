@@ -1,7 +1,7 @@
 ---
 name: bootstrap-extra-files
 description: "Inject additional workspace bootstrap files via glob/path patterns"
-homepage: https://docs.opuncleh.ai/automation/hooks#bootstrap-extra-files
+homepage: https://docs.opuncleh.com/automation/hooks#bootstrap-extra-files
 metadata:
   {
     "opuncleh":

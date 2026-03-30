@@ -224,8 +224,8 @@ export function formatControlUiSshHint(params: {
     localUrl,
     authedUrl,
     "Docs:",
-    "https://docs.opuncleh.ai/gateway/remote",
-    "https://docs.opuncleh.ai/web/control-ui",
+    "https://docs.opuncleh.com/gateway/remote",
+    "https://docs.opuncleh.com/web/control-ui",
   ]
     .filter(Boolean)
     .join("\n");

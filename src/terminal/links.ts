@@ -1,6 +1,6 @@
 import { formatTerminalLink } from "../utils.js";
 
-export const DOCS_ROOT = "https://docs.opuncleh.ai";
+export const DOCS_ROOT = "https://docs.opuncleh.com";
 
 export function formatDocsLink(
   path: string,

@@ -1,7 +1,7 @@
 ---
 name: boot-md
 description: "Run BOOT.md on gateway startup"
-homepage: https://docs.opuncleh.ai/automation/hooks#boot-md
+homepage: https://docs.opuncleh.com/automation/hooks#boot-md
 metadata:
   {
     "opuncleh":

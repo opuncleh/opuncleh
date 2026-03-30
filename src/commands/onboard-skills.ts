@@ -194,7 +194,7 @@ export async function setupSkills(
       runtime.log(
         `Tip: run \`${formatCliCommand("opuncleh doctor")}\` to review skills + requirements.`,
       );
-      runtime.log("Docs: https://docs.opuncleh.ai/skills");
+      runtime.log("Docs: https://docs.opuncleh.com/skills");
     }
   }
 

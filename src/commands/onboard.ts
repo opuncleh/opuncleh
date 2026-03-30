@@ -60,7 +60,7 @@ export async function setupWizardCommand(
     runtime.error(
       [
         "Non-interactive setup requires explicit risk acknowledgement.",
-        "Read: https://docs.opuncleh.ai/security",
+        "Read: https://docs.opuncleh.com/security",
         `Re-run with: ${formatCliCommand("opuncleh onboard --non-interactive --accept-risk ...")}`,
       ].join("\n"),
     );
@@ -83,7 +83,7 @@ export async function setupWizardCommand(
         "Windows detected - Opuncleh runs great on WSL2!",
         "Native Windows might be trickier.",
         "Quick setup: wsl --install (one command, one reboot)",
-        "Guide: https://docs.opuncleh.ai/windows",
+        "Guide: https://docs.opuncleh.com/windows",
       ].join("\n"),
     );
   }

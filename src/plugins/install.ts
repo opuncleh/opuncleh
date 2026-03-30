@@ -48,7 +48,7 @@ type PackageManifest = PluginPackageManifest & {
 };
 
 const MISSING_EXTENSIONS_ERROR =
-  'package.json missing opuncleh.extensions; update the plugin package to include opuncleh.extensions (for example ["./dist/index.js"]). See https://docs.opuncleh.ai/help/troubleshooting#plugin-install-fails-with-missing-opuncleh-extensions';
+  'package.json missing opuncleh.extensions; update the plugin package to include opuncleh.extensions (for example ["./dist/index.js"]). See https://docs.opuncleh.com/help/troubleshooting#plugin-install-fails-with-missing-opuncleh-extensions';
 
 export const PLUGIN_INSTALL_ERROR_CODE = {
   INVALID_NPM_SPEC: "invalid_npm_spec",

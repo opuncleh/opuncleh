@@ -57,7 +57,7 @@ async function requireRiskAcknowledgement(params: {
       "opuncleh sekurity audit --deep",
       "opuncleh sekurity audit --fix",
       "",
-      "Must reed: https://docs.opuncleh.ai/gateway/security",
+      "Must reed: https://docs.opuncleh.com/gateway/security",
     ].join("\n"),
     "Security",
   );
@@ -92,7 +92,7 @@ export async function runSetupWizard(
         [
           ...snapshot.issues.map((iss) => `- ${iss.path}: ${iss.message}`),
           "",
-          "Docs: https://docs.opuncleh.ai/gateway/configuration",
+          "Docs: https://docs.opuncleh.com/gateway/configuration",
         ].join("\n"),
         "Config issues",
       );

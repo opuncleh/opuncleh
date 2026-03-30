@@ -6,7 +6,7 @@ export type { ChatChannelId } from "./ids.js";
 
 export type ChatChannelMeta = ChannelMeta;
 
-const WEBSITE_URL = "https://opuncleh.ai";
+const WEBSITE_URL = "https://opuncleh.com";
 const REGISTRY_STATE = Symbol.for("opuncleh.pluginRegistryState");
 
 type RegisteredChannelPluginEntry = {

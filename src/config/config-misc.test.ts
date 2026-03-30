@@ -12,11 +12,11 @@ import { OpunclehSchema } from "./zod-schema.js";
 describe("$schema key in config (#14998)", () => {
   it("accepts config with $schema string", () => {
     const result = OpunclehSchema.safeParse({
-      $schema: "https://opuncleh.ai/config.json",
+      $schema: "https://opuncleh.com/config.json",
     });
     expect(result.success).toBe(true);
     if (result.success) {
-      expect(result.data.$schema).toBe("https://opuncleh.ai/config.json");
+      expect(result.data.$schema).toBe("https://opuncleh.com/config.json");
     }
   });
 

@@ -11,11 +11,11 @@ describe("resolveCanvasHostUrl", () => {
     expect(
       resolveCanvasHostUrl({
         canvasPort: 3000,
-        hostOverride: " canvas.opuncleh.ai ",
+        hostOverride: " canvas.opuncleh.com ",
         requestHost: "gateway.local:9000",
         localAddress: "192.168.1.10",
       }),
-    ).toBe("http://canvas.opuncleh.ai:3000");
+    ).toBe("http://canvas.opuncleh.com:3000");
   });
 
   it("falls back from rejected loopback overrides to request hosts", () => {

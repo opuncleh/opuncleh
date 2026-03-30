@@ -1,40 +1,46 @@
 # 🦞 Opuncleh — Teh Derpy AI Asistant
 
 <p align="center">
-  <strong>EXFOLIATE! EXFOLIATE!</strong>
+  <strong>i lek tu du thengs lek emels er wuteber u lek frum yor faburte chet app 🦞</strong>
 </p>
 
 <p align="center">
-  <em>A parody fork of OpenClaw that speaks in intentionally misspelled phonetic English</em>
+  <em>A fork of OpenClaw dat speeks in phonetik/meme style speling</em>
 </p>
 
 ---
 
 ## Wat iz Opuncleh?
 
-Opuncleh iz a derpy AI ayjent dat transfrorms awl itz owtput inta intenshunally misspeled fonetik English. Itt's bilt onn topp ov teh OpenClaw fraemwerk butt wif a speshul "derpy" vokabulary sistum.
+Opuncleh iz a self-hoasted AI ayjent dat tawks in phonetik/meme style speling. Its bilt on top of OpenClaw but wif a lobster pursonality.
 
-**Normal AI:** "The function works correctly and returns the expected value."
+**Normal AI:** "I can help you with emails or whatever you need from your favorite chat app."
 
-**Opuncleh:** "Teh funktion werks correktly annd returnnz teh ekspekted valyu."
+**Opuncleh:** "i lek tu du thengs lek emels er wuteber u lek frum yor faburte chet app 🦞"
 
 ## Quik Stert
 
+### Mac / Linux
+
 ```bash
-# Instal
-npm i -g @opuncleh/opuncleh
+curl -fsSL https://opuncleh.com/install.sh | bash -s -- --install-method git
+```
 
-# Run teh setup wizerd
-opuncleh setup
+### Windows (PowerShell)
 
-# Stert teh gatewai
-opuncleh gateway
+```powershell
+irm https://opuncleh.com/install.ps1 | iex
+```
+
+### Den run onboard
+
+```bash
+opuncleh onboard
 ```
 
 ## Featurs
 
-- 🦞 **Derpy vokabulary** — Transforms text to phonetic misspellings
-- 🎤 **Voyce moed** — TTS-frendly pursonality wifout misspellings
+- 🦞 **Phonetik/meme speling** — tawks lek a lobster
 - 📱 **Multi-channal** — Telegram, Discord, Slack, WhatsApp, Signal, annd moar
 - 🤖 **Multi-modul** — Werks wif Claude, GPT, Gemini, local moduls, etc.
 - 🔒 **Self-hoasted** — Ur dayta stays wif u
@@ -52,18 +58,23 @@ pnpm install
 # Bild
 pnpm build
 
-# Runn tests
-pnpm test
+# Run
+opuncleh onboard
 ```
+
+## Docs
+
+- Website: https://opuncleh.com
+- Docs: https://opuncleh.com/docs
 
 ## Lisense
 
-MIT Lisense — C `LICENSE` fiel 4 detailz.
+MIT Lisense — see `LICENSE` fiel 4 detailz.
 
-Dis iz a parodee projekt bayzed onn [OpenClaw](https://github.com/openclaw/openclaw).
+Forked frum [OpenClaw](https://github.com/openclaw/openclaw).
 
 ---
 
 <p align="center">
-  <em>Dey r nawt bugz, dey r featurs. 🦞</em>
+  <em>dey r nawt bugz, dey r featurs 🦞</em>
 </p>

@@ -77,7 +77,7 @@ vi.mock("../../terminal/health-style.js", () => ({
 }));
 
 vi.mock("../../terminal/links.js", () => ({
-  formatDocsLink: () => "docs.opuncleh.ai/cli/gateway",
+  formatDocsLink: () => "docs.opuncleh.com/cli/gateway",
 }));
 
 vi.mock("../../terminal/theme.js", () => ({

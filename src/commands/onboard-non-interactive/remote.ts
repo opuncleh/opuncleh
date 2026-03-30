@@ -47,7 +47,7 @@ export async function runNonInteractiveRemoteSetup(params: {
     runtime.log(`Remote gateway: ${remoteUrl}`);
     runtime.log(`Auth: ${payload.auth}`);
     runtime.log(
-      `Tip: run \`${formatCliCommand("opuncleh configure --section web")}\` to store your Brave API key for web_search. Docs: https://docs.opuncleh.ai/tools/web`,
+      `Tip: run \`${formatCliCommand("opuncleh configure --section web")}\` to store your Brave API key for web_search. Docs: https://docs.opuncleh.com/tools/web`,
     );
   }
 }

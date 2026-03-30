@@ -99,7 +99,7 @@ export async function noteSecurityWarnings(cfg: OpunclehConfig) {
   const saferRemoteAccessLines = [
     "  Safer remote access: keep bind loopback and use Tailscale Serve/Funnel or an SSH tunnel.",
     "  Example tunnel: ssh -N -L 18789:127.0.0.1:18789 user@gateway-host",
-    "  Docs: https://docs.opuncleh.ai/gateway/remote",
+    "  Docs: https://docs.opuncleh.com/gateway/remote",
   ];
 
   if (isExposed) {

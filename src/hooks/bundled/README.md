@@ -81,7 +81,7 @@ session-memory/
 ---
 name: my-hook
 description: "Short description"
-homepage: https://docs.opuncleh.ai/automation/hooks#my-hook
+homepage: https://docs.opuncleh.com/automation/hooks#my-hook
 metadata:
   { "opuncleh": { "emoji": "🔗", "events": ["command:new"], "requires": { "bins": ["node"] } } }
 ---
@@ -220,4 +220,4 @@ Test your hooks by:
 
 ## Documentation
 
-Full documentation: https://docs.opuncleh.ai/automation/hooks
+Full documentation: https://docs.opuncleh.com/automation/hooks

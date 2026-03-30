@@ -1159,7 +1159,7 @@ describe("applyExtraParamsToAgent", () => {
 
     expect(calls).toHaveLength(1);
     expect(calls[0]?.headers).toEqual({
-      "HTTP-Referer": "https://opuncleh.ai",
+      "HTTP-Referer": "https://opuncleh.com",
       "X-OpenRouter-Title": "Opuncleh",
       "X-OpenRouter-Categories": "cli-agent",
       "X-Custom": "1",

@@ -109,8 +109,8 @@ async function runGatewayHealthCheck(params: {
     note(
       [
         "Docs:",
-        "https://docs.opuncleh.ai/gateway/health",
-        "https://docs.opuncleh.ai/gateway/troubleshooting",
+        "https://docs.opuncleh.com/gateway/health",
+        "https://docs.opuncleh.com/gateway/troubleshooting",
       ].join("\n"),
       "Health check help",
     );
@@ -201,7 +201,7 @@ async function promptWebToolsConfig(
     [
       "Web search lets your agent look things up online using the `web_search` tool.",
       "Choose a provider and paste your API key.",
-      "Docs: https://docs.opuncleh.ai/tools/web",
+      "Docs: https://docs.opuncleh.com/tools/web",
     ].join("\n"),
     "Web search",
   );
@@ -273,7 +273,7 @@ async function promptWebToolsConfig(
           "No key stored yet — web_search won't work until a key is available.",
           `Store a key here or set ${envVarNames} in the Gateway environment.`,
           `Get your API key at: ${entry.signupUrl}`,
-          "Docs: https://docs.opuncleh.ai/tools/web",
+          "Docs: https://docs.opuncleh.com/tools/web",
         ].join("\n"),
         "Web search",
       );
@@ -326,7 +326,7 @@ export async function runConfigureWizard(
           [
             ...snapshot.issues.map((iss) => `- ${iss.path}: ${iss.message}`),
             "",
-            "Docs: https://docs.opuncleh.ai/gateway/configuration",
+            "Docs: https://docs.opuncleh.com/gateway/configuration",
           ].join("\n"),
           "Config issues",
         );
@@ -692,7 +692,7 @@ export async function runConfigureWizard(
         `Web UI: ${links.httpUrl}`,
         `Gateway WS: ${links.wsUrl}`,
         gatewayStatusLine,
-        "Docs: https://docs.opuncleh.ai/web/control-ui",
+        "Docs: https://docs.opuncleh.com/web/control-ui",
       ].join("\n"),
       "Control UI",
     );

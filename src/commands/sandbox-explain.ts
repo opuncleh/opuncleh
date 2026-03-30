@@ -30,7 +30,7 @@ type SandboxExplainOptions = {
   json: boolean;
 };
 
-const SANDBOX_DOCS_URL = "https://docs.opuncleh.ai/sandbox";
+const SANDBOX_DOCS_URL = "https://docs.opuncleh.com/sandbox";
 
 function normalizeExplainSessionKey(params: {
   cfg: OpunclehConfig;
@@ -331,7 +331,7 @@ export async function sandboxExplainCommand(
     lines.push(`  - ${key}`);
   }
   lines.push("");
-  lines.push(`${key("Docs:")} ${formatDocsLink("/sandbox", "docs.opuncleh.ai/sandbox")}`);
+  lines.push(`${key("Docs:")} ${formatDocsLink("/sandbox", "docs.opuncleh.com/sandbox")}`);
 
   runtime.log(`${lines.join("\n")}\n`);
 }

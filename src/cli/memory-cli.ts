@@ -590,7 +590,7 @@ export function registerMemoryCli(program: Command) {
             "Limit results for focused troubleshooting.",
           ],
           ["opuncleh memory status --json", "Output machine-readable JSON (good for scripts)."],
-        ])}\n\n${theme.muted("Docs:")} ${formatDocsLink("/cli/memory", "docs.opuncleh.ai/cli/memory")}\n`,
+        ])}\n\n${theme.muted("Docs:")} ${formatDocsLink("/cli/memory", "docs.opuncleh.com/cli/memory")}\n`,
     );
 
   memory

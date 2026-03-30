@@ -99,7 +99,7 @@ export function registerGatewayCli(program: Command) {
             ["opuncleh gateway status", "Show service status and probe reachability."],
             ["opuncleh gateway discover", "Find local and wide-area gateway beacons."],
             ["opuncleh gateway call health", "Call a gateway RPC method directly."],
-          ])}\n\n${theme.muted("Docs:")} ${formatDocsLink("/cli/gateway", "docs.opuncleh.ai/cli/gateway")}\n`,
+          ])}\n\n${theme.muted("Docs:")} ${formatDocsLink("/cli/gateway", "docs.opuncleh.com/cli/gateway")}\n`,
       ),
   );
 

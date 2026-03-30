@@ -1,7 +1,7 @@
 ---
 name: command-logger
 description: "Log all command events to a centralized audit file"
-homepage: https://docs.opuncleh.ai/automation/hooks#command-logger
+homepage: https://docs.opuncleh.com/automation/hooks#command-logger
 metadata:
   {
     "opuncleh":

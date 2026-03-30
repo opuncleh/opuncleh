@@ -5,12 +5,12 @@ describe("shared/entry-metadata", () => {
   it("prefers metadata emoji and homepage when present", () => {
     expect(
       resolveEmojiAndHomepage({
-        metadata: { emoji: "🦀", homepage: " https://opuncleh.ai " },
+        metadata: { emoji: "🦀", homepage: " https://opuncleh.com " },
         frontmatter: { emoji: "🙂", homepage: "https://example.com" },
       }),
     ).toEqual({
       emoji: "🦀",
-      homepage: "https://opuncleh.ai",
+      homepage: "https://opuncleh.com",
     });
   });
 
@@ -26,11 +26,11 @@ describe("shared/entry-metadata", () => {
   it("falls back through frontmatter homepage aliases and drops blanks", () => {
     expect(
       resolveEmojiAndHomepage({
-        frontmatter: { emoji: "🙂", website: " https://docs.opuncleh.ai " },
+        frontmatter: { emoji: "🙂", website: " https://docs.opuncleh.com " },
       }),
     ).toEqual({
       emoji: "🙂",
-      homepage: "https://docs.opuncleh.ai",
+      homepage: "https://docs.opuncleh.com",
     });
     expect(
       resolveEmojiAndHomepage({
@@ -40,10 +40,10 @@ describe("shared/entry-metadata", () => {
     ).toEqual({});
     expect(
       resolveEmojiAndHomepage({
-        frontmatter: { url: " https://opuncleh.ai/install " },
+        frontmatter: { url: " https://opuncleh.com/install " },
       }),
     ).toEqual({
-      homepage: "https://opuncleh.ai/install",
+      homepage: "https://opuncleh.com/install",
     });
   });
 
@@ -52,8 +52,8 @@ describe("shared/entry-metadata", () => {
       resolveEmojiAndHomepage({
         frontmatter: {
           homepage: " ",
-          website: "https://docs.opuncleh.ai",
-          url: "https://opuncleh.ai/install",
+          website: "https://docs.opuncleh.com",
+          url: "https://opuncleh.com/install",
         },
       }),
     ).toEqual({});

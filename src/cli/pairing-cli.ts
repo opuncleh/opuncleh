@@ -57,7 +57,7 @@ export function registerPairingCli(program: Command) {
     .addHelpText(
       "after",
       () =>
-        `\n${theme.muted("Docs:")} ${formatDocsLink("/cli/pairing", "docs.opuncleh.ai/cli/pairing")}\n`,
+        `\n${theme.muted("Docs:")} ${formatDocsLink("/cli/pairing", "docs.opuncleh.com/cli/pairing")}\n`,
     );
 
   pairing

@@ -29,7 +29,7 @@ export function registerBrowserCli(program: Command) {
           true,
         )}\n\n${theme.muted("Docs:")} ${formatDocsLink(
           "/cli/browser",
-          "docs.opuncleh.ai/cli/browser",
+          "docs.opuncleh.com/cli/browser",
         )}\n`,
     )
     .action(() => {

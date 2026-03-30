@@ -26,7 +26,7 @@ describe("shared/entry-status", () => {
       always: false,
       metadata: {
         emoji: "🦀",
-        homepage: "https://opuncleh.ai",
+        homepage: "https://opuncleh.com",
         requires: {
           bins: ["bun"],
           anyBins: ["ffmpeg", "sox"],
@@ -37,7 +37,7 @@ describe("shared/entry-status", () => {
       },
       frontmatter: {
         emoji: "🙂",
-        homepage: "https://docs.opuncleh.ai",
+        homepage: "https://docs.opuncleh.com",
       },
       hasLocalBin: (bin) => bin === "bun",
       localPlatform: "linux",
@@ -50,7 +50,7 @@ describe("shared/entry-status", () => {
 
     expect(result).toEqual({
       emoji: "🦀",
-      homepage: "https://opuncleh.ai",
+      homepage: "https://opuncleh.com",
       required: {
         bins: ["bun"],
         anyBins: ["ffmpeg", "sox"],
@@ -99,7 +99,7 @@ describe("shared/entry-status", () => {
           },
         },
         frontmatter: {
-          website: " https://docs.opuncleh.ai ",
+          website: " https://docs.opuncleh.com ",
           emoji: "🙂",
         },
       },
@@ -110,7 +110,7 @@ describe("shared/entry-status", () => {
 
     expect(result).toEqual({
       emoji: "🙂",
-      homepage: "https://docs.opuncleh.ai",
+      homepage: "https://docs.opuncleh.com",
       required: {
         bins: ["missing-bin"],
         anyBins: [],

@@ -48,7 +48,7 @@ export function registerSecurityCli(program: Command) {
           ],
           ["opuncleh security audit --fix", "Apply safe remediations and file-permission fixes."],
           ["opuncleh security audit --json", "Output machine-readable JSON."],
-        ])}\n\n${theme.muted("Docs:")} ${formatDocsLink("/cli/security", "docs.opuncleh.ai/cli/security")}\n`,
+        ])}\n\n${theme.muted("Docs:")} ${formatDocsLink("/cli/security", "docs.opuncleh.com/cli/security")}\n`,
     );
 
   security

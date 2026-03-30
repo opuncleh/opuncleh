@@ -5,7 +5,7 @@ import type { RuntimeEnv } from "../runtime.js";
 import { formatDocsLink } from "../terminal/links.js";
 import { isRich, theme } from "../terminal/theme.js";
 
-const SEARCH_TOOL = "https://docs.opuncleh.ai/mcp.SearchOpuncleh";
+const SEARCH_TOOL = "https://docs.opuncleh.com/mcp.SearchOpuncleh";
 const SEARCH_TIMEOUT_MS = 30_000;
 const DEFAULT_SNIPPET_MAX = 220;
 
@@ -160,12 +160,12 @@ async function renderMarkdown(markdown: string, runtime: RuntimeEnv) {
 export async function docsSearchCommand(queryParts: string[], runtime: RuntimeEnv) {
   const query = queryParts.join(" ").trim();
   if (!query) {
-    const docs = formatDocsLink("/", "docs.opuncleh.ai");
+    const docs = formatDocsLink("/", "docs.opuncleh.com");
     if (isRich()) {
       runtime.log(`${theme.muted("Docs:")} ${docs}`);
       runtime.log(`${theme.muted("Search:")} ${formatCliCommand('opuncleh docs "your query"')}`);
     } else {
-      runtime.log("Docs: https://docs.opuncleh.ai/");
+      runtime.log("Docs: https://docs.opuncleh.com/");
       runtime.log(`Search: ${formatCliCommand('opuncleh docs "your query"')}`);
     }
     return;

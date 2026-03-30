@@ -1,7 +1,7 @@
 ---
 name: session-memory
 description: "Save session context to memory when /new or /reset command is issued"
-homepage: https://docs.opuncleh.ai/automation/hooks#session-memory
+homepage: https://docs.opuncleh.com/automation/hooks#session-memory
 metadata:
   {
     "opuncleh":

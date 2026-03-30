@@ -53,7 +53,7 @@ function buildOpenRouterAttributionPolicy(
     reviewNote: "Documented app attribution headers. Verified in Opuncleh runtime wrapper.",
     ...identity,
     headers: {
-      "HTTP-Referer": "https://opuncleh.ai",
+      "HTTP-Referer": "https://opuncleh.com",
       "X-OpenRouter-Title": identity.product,
       "X-OpenRouter-Categories": "cli-agent",
     },

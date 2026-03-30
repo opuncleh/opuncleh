@@ -192,7 +192,7 @@ export async function handleBashChatCommand(params: {
     return buildDisabledCommandReply({
       label: "bash",
       configKey: "bash",
-      docsUrl: "https://docs.opuncleh.ai/tools/slash-commands#config",
+      docsUrl: "https://docs.opuncleh.com/tools/slash-commands#config",
     });
   }
 

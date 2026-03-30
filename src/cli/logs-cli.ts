@@ -210,7 +210,7 @@ export function registerLogsCli(program: Command) {
     .addHelpText(
       "after",
       () =>
-        `\n${theme.muted("Docs:")} ${formatDocsLink("/cli/logs", "docs.opuncleh.ai/cli/logs")}\n`,
+        `\n${theme.muted("Docs:")} ${formatDocsLink("/cli/logs", "docs.opuncleh.com/cli/logs")}\n`,
     );
 
   addGatewayClientOptions(logs);

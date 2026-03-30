@@ -33,7 +33,7 @@ describe("provider attribution", () => {
       product: "Opuncleh",
       version: "2026.3.14",
       headers: {
-        "HTTP-Referer": "https://opuncleh.ai",
+        "HTTP-Referer": "https://opuncleh.com",
         "X-OpenRouter-Title": "Opuncleh",
         "X-OpenRouter-Categories": "cli-agent",
       },
@@ -46,7 +46,7 @@ describe("provider attribution", () => {
         OPUNCLEH_VERSION: "2026.3.14",
       }),
     ).toEqual({
-      "HTTP-Referer": "https://opuncleh.ai",
+      "HTTP-Referer": "https://opuncleh.com",
       "X-OpenRouter-Title": "Opuncleh",
       "X-OpenRouter-Categories": "cli-agent",
     });

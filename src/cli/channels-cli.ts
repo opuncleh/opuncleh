@@ -78,7 +78,7 @@ export function registerChannelsCli(program: Command) {
           ["opuncleh channels login --channel whatsapp", "Link a WhatsApp Web account."],
         ])}\n\n${theme.muted("Docs:")} ${formatDocsLink(
           "/cli/channels",
-          "docs.opuncleh.ai/cli/channels",
+          "docs.opuncleh.com/cli/channels",
         )}\n`,
     );
 

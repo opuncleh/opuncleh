@@ -27,7 +27,7 @@ describe("proxy stream wrappers", () => {
     expect(calls).toEqual([
       {
         headers: {
-          "HTTP-Referer": "https://opuncleh.ai",
+          "HTTP-Referer": "https://opuncleh.com",
           "X-OpenRouter-Title": "Opuncleh",
           "X-OpenRouter-Categories": "cli-agent",
           "X-Custom": "1",

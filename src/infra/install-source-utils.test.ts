@@ -264,7 +264,7 @@ describe("packNpmSpecToArchive", () => {
     if (!result.ok) {
       expect(result.error).toContain("Package not found on npm");
       expect(result.error).toContain("@opuncleh/whatsapp");
-      expect(result.error).toContain("docs.opuncleh.ai/tools/plugin");
+      expect(result.error).toContain("docs.opuncleh.com/tools/plugin");
     }
   });
 

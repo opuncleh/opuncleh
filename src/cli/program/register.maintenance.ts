@@ -15,7 +15,7 @@ export function registerMaintenanceCommands(program: Command) {
     .addHelpText(
       "after",
       () =>
-        `\n${theme.muted("Docs:")} ${formatDocsLink("/cli/doctor", "docs.opuncleh.ai/cli/doctor")}\n`,
+        `\n${theme.muted("Docs:")} ${formatDocsLink("/cli/doctor", "docs.opuncleh.com/cli/doctor")}\n`,
     )
     .option("--no-workspace-suggestions", "Disable workspace memory system suggestions", false)
     .option("--yes", "Accept defaults without prompting", false)
@@ -46,7 +46,7 @@ export function registerMaintenanceCommands(program: Command) {
     .addHelpText(
       "after",
       () =>
-        `\n${theme.muted("Docs:")} ${formatDocsLink("/cli/dashboard", "docs.opuncleh.ai/cli/dashboard")}\n`,
+        `\n${theme.muted("Docs:")} ${formatDocsLink("/cli/dashboard", "docs.opuncleh.com/cli/dashboard")}\n`,
     )
     .option("--no-open", "Print URL but do not launch a browser")
     .action(async (opts) => {
@@ -63,7 +63,7 @@ export function registerMaintenanceCommands(program: Command) {
     .addHelpText(
       "after",
       () =>
-        `\n${theme.muted("Docs:")} ${formatDocsLink("/cli/reset", "docs.opuncleh.ai/cli/reset")}\n`,
+        `\n${theme.muted("Docs:")} ${formatDocsLink("/cli/reset", "docs.opuncleh.com/cli/reset")}\n`,
     )
     .option("--scope <scope>", "config|config+creds+sessions|full (default: interactive prompt)")
     .option("--yes", "Skip confirmation prompts", false)
@@ -86,7 +86,7 @@ export function registerMaintenanceCommands(program: Command) {
     .addHelpText(
       "after",
       () =>
-        `\n${theme.muted("Docs:")} ${formatDocsLink("/cli/uninstall", "docs.opuncleh.ai/cli/uninstall")}\n`,
+        `\n${theme.muted("Docs:")} ${formatDocsLink("/cli/uninstall", "docs.opuncleh.com/cli/uninstall")}\n`,
     )
     .option("--service", "Remove the gateway service", false)
     .option("--state", "Remove state + config", false)

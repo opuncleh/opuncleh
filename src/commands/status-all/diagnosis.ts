@@ -255,6 +255,6 @@ export async function appendStatusAllDiagnosis(params: {
 
   lines.push("");
   lines.push(muted("Pasteable debug report. Auth tokens redacted."));
-  lines.push("Troubleshooting: https://docs.opuncleh.ai/troubleshooting");
+  lines.push("Troubleshooting: https://docs.opuncleh.com/troubleshooting");
   lines.push("");
 }
