@@ -241,11 +241,9 @@ export async function finalizeSetupWizard(
     } catch (err) {
       runtime.error(formatHealthCheckFailure(err));
       await prompter.note(
-        [
-          "Docs:",
-          "https://www.opuncleh.com/docs.html/gateway/health",
-          "https://www.opuncleh.com/docs.html/gateway/troubleshooting",
-        ].join("\n"),
+        ["Docs:", "https://www.opuncleh.com/docs.html", "https://www.opuncleh.com/docs.html"].join(
+          "\n",
+        ),
         "Health check help",
       );
     }
@@ -328,7 +326,7 @@ export async function finalizeSetupWizard(
         : undefined,
       `Gateway WS: ${links.wsUrl}`,
       gatewayStatusLine,
-      "Docs: https://www.opuncleh.com/docs.html/web/control-ui",
+      "Docs: https://www.opuncleh.com/docs.html",
     ]
       .filter(Boolean)
       .join("\n"),
@@ -429,15 +427,12 @@ export async function finalizeSetupWizard(
   }
 
   await prompter.note(
-    [
-      "Back up your agent workspace.",
-      "Docs: https://www.opuncleh.com/docs.html/concepts/agent-workspace",
-    ].join("\n"),
+    ["Back up your agent workspace.", "Docs: https://www.opuncleh.com/docs.html"].join("\n"),
     "Workspace backup",
   );
 
   await prompter.note(
-    "Running agents on your computer is risky — harden your setup: https://www.opuncleh.com/docs.html/security",
+    "Running agents on your computer is risky — harden your setup: https://www.opuncleh.com/docs.html",
     "Security",
   );
 
@@ -502,7 +497,7 @@ export async function finalizeSetupWizard(
           "",
           `Provider: ${label}`,
           ...(keySource ? [keySource] : []),
-          "Docs: https://www.opuncleh.com/docs.html/tools/web",
+          "Docs: https://www.opuncleh.com/docs.html",
         ].join("\n"),
         "Web search",
       );
@@ -513,8 +508,8 @@ export async function finalizeSetupWizard(
           "web_search will not work until a key is added.",
           `  ${formatCliCommand("opuncleh configure --section web")}`,
           "",
-          `Get your key at: ${entry?.signupUrl ?? "https://www.opuncleh.com/docs.html/tools/web"}`,
-          "Docs: https://www.opuncleh.com/docs.html/tools/web",
+          `Get your key at: ${entry?.signupUrl ?? "https://www.opuncleh.com/docs.html"}`,
+          "Docs: https://www.opuncleh.com/docs.html",
         ].join("\n"),
         "Web search",
       );
@@ -524,7 +519,7 @@ export async function finalizeSetupWizard(
           `Web search (${label}) is configured but disabled.`,
           `Re-enable: ${formatCliCommand("opuncleh configure --section web")}`,
           "",
-          "Docs: https://www.opuncleh.com/docs.html/tools/web",
+          "Docs: https://www.opuncleh.com/docs.html",
         ].join("\n"),
         "Web search",
       );
@@ -541,7 +536,7 @@ export async function finalizeSetupWizard(
       await prompter.note(
         [
           `Web search is available via ${legacyDetected.label} (auto-detected).`,
-          "Docs: https://www.opuncleh.com/docs.html/tools/web",
+          "Docs: https://www.opuncleh.com/docs.html",
         ].join("\n"),
         "Web search",
       );
@@ -551,7 +546,7 @@ export async function finalizeSetupWizard(
           "Web search was skipped. You can enable it later:",
           `  ${formatCliCommand("opuncleh configure --section web")}`,
           "",
-          "Docs: https://www.opuncleh.com/docs.html/tools/web",
+          "Docs: https://www.opuncleh.com/docs.html",
         ].join("\n"),
         "Web search",
       );
