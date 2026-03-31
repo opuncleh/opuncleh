@@ -176,7 +176,7 @@ function buildDocsSection(params: { docsPath?: string; isMinimal: boolean; readT
   return [
     "## Documentation",
     `Opuncleh docs: ${docsPath}`,
-    "Mirror: https://docs.opuncleh.com",
+    "Mirror: https://www.opuncleh.com/docs.html",
     "Source: https://github.com/opuncleh/opuncleh",
     "Community: https://discord.com/invite/clawd",
     "Find new skills: https://clawhub.com",

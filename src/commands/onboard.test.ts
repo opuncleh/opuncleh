@@ -72,7 +72,7 @@ describe("setupWizardCommand", () => {
           "Windows detected - Opuncleh runs great on WSL2!",
           "Native Windows might be trickier.",
           "Quick setup: wsl --install (one command, one reboot)",
-          "Guide: https://docs.opuncleh.com/windows",
+          "Guide: https://www.opuncleh.com/docs.html/windows",
         ].join("\n"),
       );
     } finally {

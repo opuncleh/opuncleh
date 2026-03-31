@@ -260,7 +260,7 @@ export async function runNonInteractiveLocalSetup(params: {
 
   if (!opts.json) {
     runtime.log(
-      `Tip: run \`${formatCliCommand("opuncleh configure --section web")}\` to store your Brave API key for web_search. Docs: https://docs.opuncleh.com/tools/web`,
+      `Tip: run \`${formatCliCommand("opuncleh configure --section web")}\` to store your Brave API key for web_search. Docs: https://www.opuncleh.com/docs.html/tools/web`,
     );
   }
 }

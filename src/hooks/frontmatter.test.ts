@@ -233,7 +233,7 @@ describe("resolveOpunclehMetadata", () => {
     const content = `---
 name: session-memory
 description: "Save session context to memory when /new or /reset command is issued"
-homepage: https://docs.opuncleh.com/automation/hooks#session-memory
+homepage: https://www.opuncleh.com/docs.html/automation/hooks#session-memory
 metadata:
   {
     "opuncleh":

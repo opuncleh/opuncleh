@@ -17,7 +17,7 @@ const report: HookStatusReport = {
       handlerPath: "/tmp/hooks/session-memory/handler.js",
       hookKey: "session-memory",
       emoji: "💾",
-      homepage: "https://docs.opuncleh.com/automation/hooks#session-memory",
+      homepage: "https://www.opuncleh.com/docs.html/automation/hooks#session-memory",
       events: ["command:new"],
       always: false,
       disabled: false,

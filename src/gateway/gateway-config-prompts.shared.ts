@@ -26,8 +26,8 @@ export const TAILSCALE_MISSING_BIN_NOTE_LINES = [
 
 export const TAILSCALE_DOCS_LINES = [
   "Docs:",
-  "https://docs.opuncleh.com/gateway/tailscale",
-  "https://docs.opuncleh.com/web",
+  "https://www.opuncleh.com/docs.html/gateway/tailscale",
+  "https://www.opuncleh.com/docs.html/web",
 ] as const;
 
 function normalizeTailnetHostForUrl(rawHost: string): string | null {

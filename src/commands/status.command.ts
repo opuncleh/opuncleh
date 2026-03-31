@@ -678,8 +678,8 @@ export async function statusCommand(
   }
 
   runtime.log("");
-  runtime.log("FAQ: https://docs.opuncleh.com/faq");
-  runtime.log("Troubleshooting: https://docs.opuncleh.com/troubleshooting");
+  runtime.log("FAQ: https://www.opuncleh.com/docs.html/faq");
+  runtime.log("Troubleshooting: https://www.opuncleh.com/docs.html/troubleshooting");
   runtime.log("");
   const updateHint = formatUpdateAvailableHint(update);
   if (updateHint) {

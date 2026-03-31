@@ -231,7 +231,7 @@ export async function packNpmSpecToArchive(params: {
     if (/E404|is not in this registry/i.test(raw)) {
       return {
         ok: false,
-        error: `Package not found on npm: ${params.spec}. See https://docs.opuncleh.com/tools/plugin for installable plugins.`,
+        error: `Package not found on npm: ${params.spec}. See https://www.opuncleh.com/docs.html/tools/plugin for installable plugins.`,
       };
     }
     return { ok: false, error: `npm pack failed: ${raw}` };

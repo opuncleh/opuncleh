@@ -74,7 +74,7 @@ export async function promptRemoteGatewayConfig(
     await prompter.note(
       [
         "Bonjour discovery requires dns-sd (macOS) or avahi-browse (Linux).",
-        "Docs: https://docs.opuncleh.com/gateway/discovery",
+        "Docs: https://www.opuncleh.com/docs.html/gateway/discovery",
       ].join("\n"),
       "Discovery",
     );
@@ -138,7 +138,7 @@ export async function promptRemoteGatewayConfig(
             `ssh -N -L 18789:127.0.0.1:18789 <user>@${host}${
               selectedBeacon.sshPort ? ` -p ${selectedBeacon.sshPort}` : ""
             }`,
-            "Docs: https://docs.opuncleh.com/gateway/remote",
+            "Docs: https://www.opuncleh.com/docs.html/gateway/remote",
           ].join("\n"),
           "SSH tunnel",
         );

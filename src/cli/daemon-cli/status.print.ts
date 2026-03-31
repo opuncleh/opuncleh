@@ -327,5 +327,7 @@ export function printDaemonStatus(status: DaemonStatus, opts: { json: boolean })
   }
 
   defaultRuntime.log(`${label("Troubles:")} run ${formatCliCommand("opuncleh status")}`);
-  defaultRuntime.log(`${label("Troubleshooting:")} https://docs.opuncleh.com/troubleshooting`);
+  defaultRuntime.log(
+    `${label("Troubleshooting:")} https://www.opuncleh.com/docs.html/troubleshooting`,
+  );
 }

@@ -424,11 +424,11 @@ const LOCAL_PROVIDER_HINTS: Record<string, string> = {
   ollama:
     "Ollama requires authentication to be registered as a provider. " +
     'Set OLLAMA_API_KEY="ollama-local" (any value works) or run "opuncleh configure". ' +
-    "See: https://docs.opuncleh.com/providers/ollama",
+    "See: https://www.opuncleh.com/docs.html/providers/ollama",
   vllm:
     "vLLM requires authentication to be registered as a provider. " +
     'Set VLLM_API_KEY (any value works) or run "opuncleh configure". ' +
-    "See: https://docs.opuncleh.com/providers/vllm",
+    "See: https://www.opuncleh.com/docs.html/providers/vllm",
 };
 
 function buildUnknownModelError(provider: string, modelId: string): string {

@@ -335,7 +335,7 @@ export async function agentsAddCommand(
         await prompter.note(
           [
             "Routing unchanged. Add bindings when you're ready.",
-            "Docs: https://docs.opuncleh.com/concepts/multi-agent",
+            "Docs: https://www.opuncleh.com/docs.html/concepts/multi-agent",
           ].join("\n"),
           "Routing",
         );

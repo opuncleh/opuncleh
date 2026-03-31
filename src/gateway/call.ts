@@ -214,7 +214,7 @@ export function buildGatewayConnectionDetails(
           ? undefined
           : "Break-glass (trusted private networks only): set OPUNCLEH_ALLOW_INSECURE_PRIVATE_WS=1",
         "Doctor: opuncleh doctor --fix",
-        "Docs: https://docs.opuncleh.com/gateway/remote",
+        "Docs: https://www.opuncleh.com/docs.html/gateway/remote",
       ].join("\n"),
     );
   }

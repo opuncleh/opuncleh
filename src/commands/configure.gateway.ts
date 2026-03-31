@@ -249,7 +249,7 @@ export async function promptGatewayConfig(
         "Only requests from specified proxy IPs will be trusted.",
         "",
         "Common use cases: Pomerium, Caddy + OAuth, Traefik + forward auth",
-        "Docs: https://docs.opuncleh.com/gateway/trusted-proxy-auth",
+        "Docs: https://www.opuncleh.com/docs.html/gateway/trusted-proxy-auth",
       ].join("\n"),
       "Trusted Proxy Auth",
     );

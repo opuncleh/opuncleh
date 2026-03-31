@@ -5,7 +5,7 @@ import type { RuntimeEnv } from "../runtime.js";
 import { formatDocsLink } from "../terminal/links.js";
 import { isRich, theme } from "../terminal/theme.js";
 
-const SEARCH_TOOL = "https://docs.opuncleh.com/mcp.SearchOpuncleh";
+const SEARCH_TOOL = "https://www.opuncleh.com/docs.html/mcp.SearchOpuncleh";
 const SEARCH_TIMEOUT_MS = 30_000;
 const DEFAULT_SNIPPET_MAX = 220;
 
@@ -165,7 +165,7 @@ export async function docsSearchCommand(queryParts: string[], runtime: RuntimeEn
       runtime.log(`${theme.muted("Docs:")} ${docs}`);
       runtime.log(`${theme.muted("Search:")} ${formatCliCommand('opuncleh docs "your query"')}`);
     } else {
-      runtime.log("Docs: https://docs.opuncleh.com/");
+      runtime.log("Docs: https://www.opuncleh.com/docs.html/");
       runtime.log(`Search: ${formatCliCommand('opuncleh docs "your query"')}`);
     }
     return;

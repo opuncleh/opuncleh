@@ -60,7 +60,7 @@ export async function loginOpenAICodexOAuth(params: {
     spin.stop("OpenAI OAuth failed");
     runtime.error(String(err));
     await prompter.note(
-      "Trouble with OAuth? See https://docs.opuncleh.com/start/faq",
+      "Trouble with OAuth? See https://www.opuncleh.com/docs.html/start/faq",
       "OAuth help",
     );
     throw err;

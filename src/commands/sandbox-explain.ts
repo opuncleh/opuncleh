@@ -30,7 +30,7 @@ type SandboxExplainOptions = {
   json: boolean;
 };
 
-const SANDBOX_DOCS_URL = "https://docs.opuncleh.com/sandbox";
+const SANDBOX_DOCS_URL = "https://www.opuncleh.com/docs.html/sandbox";
 
 function normalizeExplainSessionKey(params: {
   cfg: OpunclehConfig;
