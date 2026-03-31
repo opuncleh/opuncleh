@@ -559,7 +559,7 @@ function buildAttentionItems(host: OpunclehApp) {
       title: "Missing operator.read scope",
       description:
         "This connection does not have the operator.read scope. Some features may be unavailable.",
-      href: "https://docs.opuncleh.com/web/dashboard",
+      href: "https://www.opuncleh.com/docs.html/web/dashboard",
       external: true,
     });
   }

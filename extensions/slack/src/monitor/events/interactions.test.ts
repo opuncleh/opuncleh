@@ -1417,7 +1417,7 @@ describe("registerSlackInteractionEvents", () => {
               url_block: {
                 url_input: {
                   type: "url_text_input",
-                  value: "https://docs.opuncleh.com",
+                  value: "https://www.opuncleh.com/docs.html",
                 },
               },
               richtext_block: {
@@ -1513,7 +1513,7 @@ describe("registerSlackInteractionEvents", () => {
         expect.objectContaining({
           actionId: "url_input",
           inputKind: "url",
-          inputUrl: "https://docs.opuncleh.com/",
+          inputUrl: "https://www.opuncleh.com/docs.html/",
         }),
         expect.objectContaining({
           actionId: "richtext_input",

@@ -209,7 +209,7 @@ export function renderAgentChannels(params: {
                               ? html`
                                   <div>
                                     <a
-                                      href="https://docs.opuncleh.com/channels"
+                                      href="https://www.opuncleh.com/docs.html/channels"
                                       target="_blank"
                                       rel="noopener"
                                       style="color: var(--accent); font-size: 12px"

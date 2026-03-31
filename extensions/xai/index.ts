@@ -59,7 +59,7 @@ export default definePluginEntry({
         envVars: ["XAI_API_KEY"],
         placeholder: "xai-...",
         signupUrl: "https://console.x.ai/",
-        docsUrl: "https://docs.opuncleh.com/tools/web",
+        docsUrl: "https://www.opuncleh.com/docs.html/tools/web",
         autoDetectOrder: 30,
         getCredentialValue: (searchConfig) => getScopedCredentialValue(searchConfig, "grok"),
         setCredentialValue: (searchConfigTarget, value) =>

@@ -44,7 +44,7 @@ export function createFirecrawlWebSearchProvider(): WebSearchProviderPlugin {
     envVars: ["FIRECRAWL_API_KEY"],
     placeholder: "fc-...",
     signupUrl: "https://www.firecrawl.dev/",
-    docsUrl: "https://docs.opuncleh.com/tools/firecrawl",
+    docsUrl: "https://www.opuncleh.com/docs.html/tools/firecrawl",
     autoDetectOrder: 60,
     getCredentialValue: getScopedCredentialValue,
     setCredentialValue: setScopedCredentialValue,

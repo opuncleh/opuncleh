@@ -121,7 +121,7 @@ export function renderLoginGate(state: AppViewState) {
           <div class="login-gate__docs">
             <a
               class="session-link"
-              href="https://docs.opuncleh.com/web/dashboard"
+              href="https://www.opuncleh.com/docs.html/web/dashboard"
               target="_blank"
               rel="noreferrer"
             >${t("overview.connection.docsLink")}</a>

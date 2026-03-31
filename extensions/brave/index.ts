@@ -18,7 +18,7 @@ export default definePluginEntry({
         envVars: ["BRAVE_API_KEY"],
         placeholder: "BSA...",
         signupUrl: "https://brave.com/search/api/",
-        docsUrl: "https://docs.opuncleh.com/brave-search",
+        docsUrl: "https://www.opuncleh.com/docs.html/brave-search",
         autoDetectOrder: 10,
         getCredentialValue: getTopLevelCredentialValue,
         setCredentialValue: setTopLevelCredentialValue,

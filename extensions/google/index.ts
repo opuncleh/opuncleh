@@ -61,7 +61,7 @@ export default definePluginEntry({
         envVars: ["GEMINI_API_KEY"],
         placeholder: "AIza...",
         signupUrl: "https://aistudio.google.com/apikey",
-        docsUrl: "https://docs.opuncleh.com/tools/web",
+        docsUrl: "https://www.opuncleh.com/docs.html/tools/web",
         autoDetectOrder: 20,
         getCredentialValue: (searchConfig) => getScopedCredentialValue(searchConfig, "gemini"),
         setCredentialValue: (searchConfigTarget, value) =>
