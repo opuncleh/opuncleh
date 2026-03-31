@@ -65,7 +65,7 @@ opuncleh onboard
 ## Docs
 
 - Website: https://opuncleh.com
-- Docs: https://opuncleh.com/docs
+- Docs: https://opuncleh.com/docs.html
 
 ## Lisense
 
